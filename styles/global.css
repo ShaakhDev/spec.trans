@@ -58,6 +58,9 @@ html {
 	display: flex;
 	flex-direction: column;
 }
+.m-auto {
+	margin: 0 auto !important;
+}
 
 /* sizing */
 .w-100 {

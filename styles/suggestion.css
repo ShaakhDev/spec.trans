@@ -4,7 +4,8 @@
 .suggestion button {
 	background: none;
 	border: none;
-	text-decoration: underline dashed;
+	text-decoration: underline dotted;
+	font-size: 1.8rem;
 }
 div[class*="-title"] {
 	width: 100%;
@@ -29,7 +30,7 @@ div[class*="-title"] .line {
 	gap: 1.5rem;
 	margin: 6rem 0;
 }
-.vehicle-card {
+.card {
 	border: 2px #f2f2f2 solid;
 	box-shadow: var(--card-shadow-color) 0px 4px 20px;
 	min-height: 21rem;
@@ -55,7 +56,7 @@ div[class*="-title"] .line {
 .vehicle-card:hover::after {
 	background-color: var(--accent-color);
 }
-.vehicle-card:hover {
+.card:hover {
 	box-shadow: none;
 }
 .vehicle-card .card-img {

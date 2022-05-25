@@ -1,0 +1,48 @@
+.services-card-box {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1.5rem;
+	margin: 6rem 0;
+	position: relative;
+}
+
+.service-name {
+	position: absolute;
+	top: 5rem;
+	left: 3rem;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.service-card .card-img {
+	position: absolute;
+	width: 20rem;
+	height: 20rem;
+	border-radius: 50%;
+	overflow: hidden;
+	top: -2rem;
+	right: -5rem;
+}
+.services-info {
+	padding: 4rem 0;
+}
+.service {
+	text-align: center;
+	width: 25%;
+	font-size: 1.8rem;
+	font-weight: 800;
+	line-height: 2rem;
+	cursor: pointer;
+}
+.service path {
+	transition: all 0.2s ease;
+}
+.service:hover path,
+.service:hover p {
+	fill: var(--accent-color);
+	color: var(--accent-color);
+}
+.service p {
+	padding-top: 2rem;
+	transition: all 0.2s ease;
+}
