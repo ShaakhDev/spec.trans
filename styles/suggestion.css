@@ -1,0 +1,72 @@
+.suggestion {
+	padding: 4rem 0;
+}
+.suggestion button {
+	background: none;
+	border: none;
+	text-decoration: underline dashed;
+}
+div[class*="-title"] {
+	width: 100%;
+}
+div[class*="-title"] h1 {
+	font-size: 4.8rem;
+	white-space: nowrap;
+	vertical-align: middle;
+	font-weight: 800;
+	padding-right: 2rem;
+}
+div[class*="-title"] .line {
+	width: inherit;
+	height: 0.4rem;
+	border-radius: 0.2rem;
+	background-color: var(--accent-color);
+}
+
+.vehicle-card-box {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1.5rem;
+	margin: 6rem 0;
+}
+.vehicle-card {
+	border: 2px #f2f2f2 solid;
+	box-shadow: var(--card-shadow-color) 0px 4px 20px;
+	min-height: 21rem;
+	position: relative;
+	background: transparent;
+	overflow: hidden;
+	border-radius: 1rem;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+.vehicle-card::after {
+	content: "";
+	position: absolute;
+	height: 20rem;
+	width: 20rem;
+	border-radius: 50%;
+	background-color: var(--card-background-circle-color);
+	z-index: -1;
+	right: -10rem;
+	top: 0.5rem;
+	transition: all 0.3s ease;
+}
+.vehicle-card:hover::after {
+	background-color: var(--accent-color);
+}
+.vehicle-card:hover {
+	box-shadow: none;
+}
+.vehicle-card .card-img {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+}
+.vehicle-card .vehicle-name {
+	position: absolute;
+	top: 4rem;
+	left: 2rem;
+	font-size: 1.8rem;
+	font-weight: bold;
+}

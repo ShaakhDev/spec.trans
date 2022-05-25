@@ -1,0 +1,80 @@
+.header {
+	background-image: url("../images/header.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-height: 70rem;
+}
+.header .box {
+	position: relative;
+}
+.header-content-title {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%);
+	max-width: 50%;
+}
+.header-content-title h1 {
+	font-size: 9.4rem;
+	padding-bottom: 2rem;
+	font-weight: 900;
+}
+.header-content-title img {
+	width: 5.3rem;
+	height: 5.3rem;
+	vertical-align: middle;
+	margin-right: 2.5rem;
+}
+.header-content-title p {
+	font-size: 3.2rem;
+	vertical-align: middle;
+	line-height: 7.5rem;
+	font-weight: bold;
+}
+
+.header-card-form {
+	max-width: 41.2rem;
+	max-height: 40rem;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(10px);
+	border-radius: 1rem;
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	transform: translate(0, -50%);
+	padding: 4.5rem 2.8rem;
+}
+.header-card-form h1 {
+	font-size: 3.2rem;
+	font-weight: 500;
+}
+.header-card-form input {
+	border: none;
+	outline: none;
+	padding: 1.4rem;
+	margin: 1rem 0;
+	border-radius: 0.5rem;
+	font-size: 1.8rem;
+	color: var(--secondary-color);
+}
+.header-card-form button {
+	margin-top: 1rem;
+	padding: 1rem 0;
+	border: none;
+	border-radius: 0.5rem;
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.header-card-form button:hover {
+	background-color: var(--accent-color-hover);
+}
+.header-card-form span {
+	font-size: 1.4rem;
+	margin-top: 1rem;
+}
+.header-card-form a {
+	color: var(--accent-color);
+}

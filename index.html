@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" -->
+    <!-- integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/_base.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app">
+        <!-- Navigation Bar -->
+        <nav class="navbar h-100 w-100 d-flex j-center a-center">
+            <div class="box d-flex j-between a-center ">
+                <div class="navbar-brand d-flex a-center">
+                    <a href="/">
+                        <img src="./images/brand.svg" alt="brand-logo">
+                    </a>
+                    <a href="/">
+                        <span class="brand-color">Спец</span>
+                        <span class="accent-color">Транс</span>
+                    </a>
+                </div>
+                <div class="navbar-menu w-50  ">
+                    <ul class="w-100 d-flex j-between ">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Аренда спецтехники</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                </div>
+                <div class="navbar-contacts d-column ">
+                    <a class="accent-color" href="#">
+                        <h1>+7(999) 999-99-99</h1>
+                    </a>
+                    <a class="secondary-color" href="mailto:info@spectrans.ru">
+                        <span>info@spectrans.ru</span>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+        <!-- Header section -->
+        <header id="header" class="header d-flex j-center">
+            <div class="box d-flex j-between">
+                <div class="header-content">
+                    <div class="header-content-title header-text-color">
+                        <h1>Аренда спецтехники</h1>
+                        <p><img src="./images/tic-icon.svg" />Собственный парк спецтехники</p>
+                        <p><img src="./images/tic-icon.svg" />Доступная стоимость</p>
+                    </div>
+                </div>
+                <div class="header-card-form header-text-color">
+                    <div class="card-box d-column">
+                        <h1>Заказать спецтехнику</h1>
+                        <input type="text" placeholder="Имя">
+                        <input type="tel" inputmode="numeric" required placeholder="+7(__)___-__-__" />
+                        <button class="header-text-color bg-accent-color">Заказать</button>
+                        <span>
+                            Нажимая кнопку, вы подтверждаете согласие с
+                            <a href="#">Политикой конфиденциальности</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </header>
+        <!-- -----------Suggestion section -->
+
+
+        <section id="suggestion" class="suggestion">
+            <div class="box d-column a-center">
+                <div class="suggestion-title d-row a-center">
+                    <h1>Мы предлагаем</h1>
+                    <div class="line"></div>
+                </div>
+                <div id="vehicleCardBox" class="vehicle-card-box w-100">
+                    <!-- here will be cards -->
+                </div>
+                <div class="load-more-button">
+                    <button id="loadMoreButton" class="accent-color loadmore">Смотреть всю технику</button>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+
+        </section>
+        <section id="gallery" class="gallery">
+
+        </section>
+        <section id="contact" class="contact">
+
+        </section>
+        <section id="map" class="map">
+
+        </section>
+        <section id="footer" class="footer">
+
+        </section>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
