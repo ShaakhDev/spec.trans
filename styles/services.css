@@ -1,5 +1,5 @@
 .services {
-	margin: 5rem;
+	margin: 5rem 2rem;
 }
 .services-card-box {
 	display: grid;
@@ -8,7 +8,48 @@
 	margin: 6rem 0;
 	position: relative;
 }
-
+@media screen and (max-width: 1100px) {
+	.services-card-box {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+	.service-card .card-img {
+		width: 30vw !important;
+		height: 30rem !important;
+		border-top-left-radius: 40% !important;
+		border-top-right-radius: 0 !important;
+		border-bottom-left-radius: 0 !important;
+	}
+	.services .box {
+		padding: 0;
+	}
+	.service-name {
+		width: 30vw;
+		font-size: 2.2rem !important;
+	}
+}
+@media screen and (max-width: 720px) {
+	.services-info {
+		flex-direction: column;
+		width: 100%;
+	}
+	.services .box {
+		padding: 0;
+	}
+	.service {
+		padding: 2rem 0;
+		margin: 0 auto;
+		width: 100% !important;
+	}
+}
+@media screen and (max-width: 520px) {
+	.service-name {
+		font-size: 1.6rem !important;
+	}
+	.service-card {
+		min-height: 15rem !important;
+	}
+}
 .service-name {
 	position: absolute;
 	top: 5rem;

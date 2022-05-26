@@ -8,6 +8,9 @@ const gallery = document.querySelector('#galleryBox')
 const contact = document.querySelector('#contactBox');
 const socialsBox = document.querySelector('#socialsBox');
 const html = document.querySelector('html')
+const menuBtn = document.querySelector('#menuBtn')
+const menuCloseBtn = document.querySelector("#menuCloseBtn")
+const navbarMenu = document.querySelector('#navbarMenu')
 
 var vehicleNames = [
     "Экскаватор-погрузчик",
@@ -68,7 +71,7 @@ function renderVehicleCards(names) {
             <span>${name}</span>
         </div>
         <div class="card-img">
-        <div></div>
+        
             <img src="./images/vehicle-${index + 1}.webp" alt="vehicle">
         </div>
         </div>
@@ -149,8 +152,35 @@ renderFooterSocials(socials);
 
 
 
-window.addEventListener('resize', () => {
-    console.log(window.innerWidth)
-    // html.style.fontSize =  
 
+
+
+
+//opening and closing the menu
+
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 1536) {
+        html.style.fontSize = `${window.innerWidth / 30.70}%`
+    }
 })
+
+menuBtn.addEventListener('click', () => {
+    toggleMenu()
+})
+menuCloseBtn.addEventListener('click', () => {
+    toggleMenu()
+})
+
+let nodes = navbarMenu.childNodes[1].childNodes
+
+nodes.forEach((node) => {
+    node.addEventListener('click', () => {
+        toggleMenu()
+    })
+})
+
+function toggleMenu() {
+    navbarMenu.classList.toggle('show')
+    html.classList.toggle('overflow-hidden')
+}

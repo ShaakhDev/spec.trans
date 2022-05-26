@@ -25,6 +25,7 @@ html {
 	font-size: 62.5%;
 	height: 100%;
 	width: 100%;
+	scroll-behavior: smooth;
 }
 
 .app {
@@ -38,6 +39,22 @@ html {
 	max-width: 128.8rem;
 	width: 100%;
 	margin: 0 auto;
+}
+@media screen and (max-width: 1100px) {
+	html {
+		overflow-x: hidden !important;
+	}
+	.box {
+		padding: 0 4rem;
+	}
+}
+@media screen and (max-width: 720px) {
+	html {
+		overflow-x: hidden !important;
+	}
+	.box {
+		padding: 0 2rem;
+	}
 }
 
 /* --------------------common styles */
@@ -66,6 +83,12 @@ html {
 }
 .m-auto {
 	margin: 0 auto !important;
+}
+.d-none {
+	display: none;
+}
+.overflow-hidden {
+	overflow: hidden !important;
 }
 
 /* sizing */
@@ -130,10 +153,4 @@ html {
 }
 .td-dotted {
 	text-decoration: underline dotted;
-}
-
-@media screen and (max-width: 1919px) {
-	html {
-		font-size: 50%;
-	}
 }

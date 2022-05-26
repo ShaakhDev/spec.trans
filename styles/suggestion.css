@@ -30,6 +30,34 @@ div[class*="-title"] .line {
 	gap: 1.5rem;
 	margin: 6rem 0;
 }
+@media screen and (max-width: 1100px) {
+	.vehicle-card-box {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+	}
+	.vehicle-card img {
+		transform: scale(0.8);
+	}
+	.vehicle-card .card-img {
+		right: 0 !important;
+		bottom: 0 !important;
+	}
+	div[class*="-title"] h1 {
+		font-size: 3.2rem;
+	}
+}
+@media screen and (max-width: 720px) {
+	.vehicle-card-box {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+	.vehicle-card img {
+		transform: scale(0.8);
+	}
+	div[class*="-title"] h1 {
+		font-size: 2.2rem;
+	}
+}
 .card {
 	border: 2px #f2f2f2 solid;
 	box-shadow: var(--card-shadow-color) 0px 4px 20px;
