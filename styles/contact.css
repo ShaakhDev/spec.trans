@@ -1,0 +1,22 @@
+.contact {
+	margin: 6rem 0;
+}
+.contact-box {
+	padding-top: 5rem;
+	font-size: 1.8rem;
+	font-weight: 900;
+}
+.contact-box span {
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+.contact-box span:hover {
+	text-decoration: underline;
+	color: var(--accent-color);
+}
+.contact-box img {
+	vertical-align: middle;
+	width: 3.5rem;
+	height: 3.5rem;
+	margin-right: 2rem;
+}

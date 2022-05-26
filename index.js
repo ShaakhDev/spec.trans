@@ -1,10 +1,13 @@
-import { svg } from './svgs.js'
+import { svg, socials } from './svgs.js'
+
 const cards = document.querySelector('#vehicleCardBox');
 const loadMoreButton = document.querySelector('#loadMoreButton');
 const services = document.querySelector('#servicesCardBox');
 const info = document.querySelector('#servicesInfo')
-
-
+const gallery = document.querySelector('#galleryBox')
+const contact = document.querySelector('#contactBox');
+const socialsBox = document.querySelector('#socialsBox');
+const html = document.querySelector('html')
 
 var vehicleNames = [
     "Экскаватор-погрузчик",
@@ -27,6 +30,11 @@ const infos = [
     "Скидки для постоянных клиентов"
 ];
 
+const contacts = [
+    "+7 (999) 999-99-99",
+    "info@spectrans.ru",
+    "Ежедневно с 9:00 до 19:00"
+]
 
 
 //toggle effect for load more button in the suggestion section
@@ -66,6 +74,7 @@ function renderVehicleCards(names) {
         </div>
         `
     }).join(' ')
+    return
 }
 
 //this function renders cards of the services
@@ -82,6 +91,7 @@ function renderServiceCards(names) {
     </div>
         `
     }).join(' ')
+    return
 }
 
 
@@ -95,10 +105,52 @@ function renderServiceInfo(infos) {
         </div>
         `
     }).join(' ')
+    return
+}
+
+function renderGallery() {
+    for (let i = 0; i < 6; i++) {
+        gallery.innerHTML += `
+         <div class="gallery-item">
+               <img class="w-100" src="./images/g-item-${i + 1}.webp" alt="">
+          </div>
+        `
+    }
+    return
+}
+
+function renderContact(contacts) {
+    contact.innerHTML = contacts.map((item, index) => {
+        return `
+        <div class="contact-item">
+            <img src="./images/contact-${index + 1}.svg" alt="">
+            <span>${item}</span>
+        </div>
+        `
+    }).join(' ')
 }
 
 
+function renderFooterSocials(socials) {
+    socialsBox.innerHTML = socials.map((icon) => {
+        return ` 
+        <a href="#">
+            ${icon}
+        </a>`
+    }).join(' ')
+}
 //execution of above functions
-renderServiceInfo(infos)
-renderServiceCards(serviceNames)
 renderVehicleCards(vehicleNames)
+renderServiceCards(serviceNames)
+renderServiceInfo(infos)
+renderGallery()
+renderContact(contacts);
+renderFooterSocials(socials);
+
+
+
+window.addEventListener('resize', () => {
+    console.log(window.innerWidth)
+    // html.style.fontSize =  
+
+})

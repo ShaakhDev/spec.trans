@@ -1,0 +1,35 @@
+.footer {
+	background: var(--footer-background-color);
+	color: var(--header-text-color);
+}
+.footer .footer-box {
+	padding: 7rem 0;
+	font-size: 1.6rem;
+}
+.footer ul li {
+	list-style: none;
+	color: var(--header-text-color);
+	font-size: 1.6rem;
+	line-height: 3rem;
+}
+.footer ul li a {
+	color: var(--header-text-color);
+	transition: all 0.2s ease;
+}
+.footer ul li a:hover {
+	color: var(--footer-text-hover-color);
+}
+.footer-copyright {
+	border-top: 1px solid #383641;
+	font-size: 1.4rem;
+	padding: 2rem 0;
+}
+.footer-copyright .socials a {
+	margin: 0 2rem;
+}
+.footer-copyright path {
+	transition: all 0.2s ease;
+}
+.footer-copyright .socials a:hover path {
+	fill: var(--accent-color);
+}

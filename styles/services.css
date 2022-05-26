@@ -1,3 +1,6 @@
+.services {
+	margin: 5rem;
+}
 .services-card-box {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;

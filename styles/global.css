@@ -7,6 +7,10 @@
 	--header-text-color: #ffffff;
 	--card-background-circle-color: #f5f5f5;
 	--card-shadow-color: rgba(112, 112, 112, 0.25);
+	--footer-background-color: #25242e;
+	--footer-text-hover-color: #9f9f9f;
+	--modal-card-shadow-color: rgba(30, 77, 140, 0.25);
+	--warning-color: #ff0000;
 }
 
 * {
@@ -22,11 +26,13 @@ html {
 	height: 100%;
 	width: 100%;
 }
+
 .app {
 	max-width: 192rem;
 	margin: 0 auto;
 	height: 100%;
 	width: 100%;
+	position: relative;
 }
 .box {
 	max-width: 128.8rem;
@@ -117,4 +123,17 @@ html {
 
 .bg-accent-color {
 	background-color: var(--accent-color);
+}
+
+.td-underline {
+	text-decoration: underline;
+}
+.td-dotted {
+	text-decoration: underline dotted;
+}
+
+@media screen and (max-width: 1919px) {
+	html {
+		font-size: 50%;
+	}
 }

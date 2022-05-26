@@ -29,6 +29,9 @@
 	display: table-cell;
 	vertical-align: middle;
 }
+.navbar-menu li:hover a {
+	color: var(--accent-color);
+}
 .navbar-contacts span {
 	text-decoration: underline dashed;
 }

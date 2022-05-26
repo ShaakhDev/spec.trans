@@ -71,9 +71,10 @@
                 <div class="header-card-form header-text-color">
                     <div class="card-box d-column">
                         <h1>Заказать спецтехнику</h1>
-                        <input type="text" placeholder="Имя">
+                        <input type="text" required placeholder="Имя">
                         <input type="tel" inputmode="numeric" required placeholder="+7(__)___-__-__" />
-                        <button class="header-text-color bg-accent-color">Заказать</button>
+                        <span id="warning" class="warning">Пожалуйста, заполните форму</span>
+                        <button type="submit" id="open" class="header-text-color bg-accent-color">Заказать</button>
                         <span>
                             Нажимая кнопку, вы подтверждаете согласие с
                             <a href="#">Политикой конфиденциальности</a>
@@ -81,9 +82,6 @@
                     </div>
                 </div>
             </div>
-
-
-
         </header>
         <!-- -----------Suggestion section -->
 
@@ -114,27 +112,121 @@
                     <div></div>
                 </div>
                 <div id="servicesInfo" class="services-info d-row j-between w-90 m-auto">
-                    <!-- here will  -->
+                    <!-- here will be service infographics  -->
                 </div>
             </div>
         </section>
         <section id="gallery" class="gallery">
-
+            <div class="box">
+                <div class="gallery-title d-row a-center">
+                    <h1>Наша техника в работе</h1>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div id="galleryBox" class="gallery-box w-100">
+                <!-- here will gallery images -->
+            </div>
         </section>
         <section id="contact" class="contact">
-
+            <div class="box">
+                <div class="contact-title d-row a-center">
+                    <h1>Контакты</h1>
+                    <div class="line"></div>
+                </div>
+                <div id="contactBox" class="contact-box d-row w-100 j-between">
+                    <!-- here will be contact info -->
+                </div>
+            </div>
         </section>
         <section id="map" class="map">
-
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.8551507773!2d36.823771451629426!3d55.58074187676544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscow%2C%20Russia!5e0!3m2!1sen!2s!4v1653543169820!5m2!1sen!2s&z=15&output=embed"
+                width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
         <section id="footer" class="footer">
-
+            <div class="box footer-box d-row j-between">
+                <div class="col">
+                    <div class="navbar-brand d-flex a-center">
+                        <a href="/">
+                            <img src="./images/brand.svg" alt="brand-logo">
+                        </a>
+                        <a href="/">
+                            <span class="header-text-color">Спец</span>
+                            <span class="accent-color">Транс</span>
+                        </a>
+                    </div>
+                    <p>Ежедневно с 9:00 до 19:00</p>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">Экскаватор погрузчик</a></li>
+                        <li><a href="#">Экскаватор</a></li>
+                        <li><a href="#">Фронтальный погрузчик</a></li>
+                        <li><a href="#">Автобетоносмеситель</a></li>
+                        <li><a href="#">Бетононасос</a></li>
+                        <li><a href="#">Самосвал</a></li>
+                        <li><a href="#">Бортовой автомобиль</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">Автокран</a></li>
+                        <li><a href="#">Кран-манипулятор</a></li>
+                        <li><a href="#">Дорожный каток</a></li>
+                        <li><a href="#">Асфальтоукладчик</a></li>
+                        <li><a href="#">Автогрейдер</a></li>
+                        <li><a href="#">Бульдозер</a></li>
+                        <li><a href="#">Ямобур</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">Низкорамная платформа</a></li>
+                        <li><a href="#">Автовышка</a></li>
+                        <li><a href="#">ГНБ</a></li>
+                        <li><a href="#">Компрессор с отбойным молотком</a></li>
+                        <li><a href="#">Трактор с щеткой</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">+7 (999) 999-99-99</a></li>
+                        <li><a class="td-underline" href="#">info@spectrans.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="box d-row j-between a-center">
+                    <span>
+                        © 2022, СпецТранс
+                    </span>
+                    <a class="td-dotted header-text-color" href="#">Политика конфиденциальности</a>
+                    <div id="socialsBox" class="socials">
+                        <!-- here will social icons  -->
+                    </div>
+                </div>
+            </div>
         </section>
+
+    </div>
+    <div id="backdrop" class="backdrop">
+        <div id="modal" class="modal">
+            <div class="modal-box">
+                <div id="close" class="close">
+                    <img src="./images/times-icon.svg" alt="close icon">
+                </div>
+                <h1 class="accent-color">Спасибо!</h1>
+                <p>Ваша заявка принята. <br> Мы скоро свяжемся с Вами.</p>
+            </div>
+        </div>
+
     </div>
 
 
-
     <script type="module" src="index.js"></script>
+    <script type="module" src="modal.js"></script>
 </body>
 
 </html>
